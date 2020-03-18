@@ -1,0 +1,73 @@
+//colors
+@import "Colors.scss";
+
+.img-cart {
+  width: 120px;
+  height: 120px;
+}
+.table {
+  > tbody > tr > td {
+    vertical-align: middle;
+  }
+  > tfoot > tr > td {
+    vertical-align: middle;
+  }
+}
+@media screen and(max-width: 600px) {
+  .actions {
+    .btn {
+      width: 36%;
+      margin: 1.5em 0;
+    }
+    .btn-info {
+      float: left;
+    }
+    .btn-danger {
+      float: right;
+    }
+  }
+  table#cart {
+    tbody {
+      td {
+        display: block;
+        padding: 0.6rem;
+        min-width: 320px;
+        .form-control {
+          width: 20%;
+          display: inline !important;
+        }
+        &:before {
+          content: attr(data-th);
+          font-weight: bold;
+          display: inline-block;
+          width: 8rem;
+        }
+      }
+      tr td:first-child {
+        background: $color_mine_shaft_approx;
+        color: $white;
+      }
+    }
+    thead {
+      display: none;
+    }
+
+    tfoot td {
+      display: block;
+      .btn {
+        display: block;
+      }
+      .btn-success {
+        background-color: $color_caribbean_green_approx !important;
+        border-color: $color_caribbean_green_approx !important;
+      }
+    }
+  }
+}
+.cart_checkout_button {
+  border-color: $color_caribbean_green_approx !important;
+  background-color: $color_caribbean_green_approx !important;
+  padding: 7px !important;
+  border-radius: 3px !important;
+  color: white !important;
+}

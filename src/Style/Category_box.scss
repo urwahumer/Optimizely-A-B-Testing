@@ -1,0 +1,34 @@
+@import "Colors.scss";
+
+@media screen and(max-width: 480px) {
+  .img_categroy_size {
+    height: 200px !important;
+  }
+  .seasonEndSale {
+    display: none;
+  }
+}
+.view {
+  position: relative;
+}
+.mask {
+  position: absolute;
+  left: 7%;
+  bottom: 0;
+}
+.text-Size {
+  font-size: 0.8rem;
+}
+.category_box {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.Category_box_button:hover {
+  background-color: $color_caribbean_green_approx !important;
+  border-color: $color_caribbean_green_approx !important;
+  transition: all 0.3s ease-in-out !important;
+}
+// .card_category {
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }

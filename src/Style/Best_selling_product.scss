@@ -1,0 +1,80 @@
+@import "Colors.scss";
+
+@media screen and (max-width: 480px) {
+  .top_selling_product_card {
+    height: 300px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top_selling_product_card {
+    height: 100px !important;
+  }
+}
+.top_selling_product_card {
+  height: 300px !important;
+  background-image: url("../Assets/Images/broken_img.png");
+  background-repeat: no-repeat;
+}
+.item-title {
+  font-size: 18px !important;
+  font-weight: normal !important;
+  margin-bottom: 0;
+}
+
+input,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  height: 51px;
+  line-height: 51px;
+  padding: 0 20px;
+  outline: none;
+  font-size: 15px;
+  color: #808080;
+  margin: 0 0 16px 0;
+  max-width: 100%;
+  width: 100%;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  display: block;
+  background-color: $color_alabaster_approx;
+  font-weight: 500;
+  border: 1px solid $color_mercury_approx;
+  opacity: 1;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+}
+.neo_card {
+  border-radius: 6px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 7px 7px 14px #d6d6d6, -7px -7px 14px #ffffff;
+}
+.img1 {
+  position: relative;
+}
+.notify-badge4 {
+  position: absolute;
+  background: #fdcb6e;
+  top: 0%;
+  left: 0%;
+  padding: 10px;
+
+  z-index: 1;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+
+  color: #2d3436;
+  border: 2px solid #fdcb6e;
+}
+// .broken_Image {
+//   height: 300px !important;
+//   // background-image: url("../Assets/Images/broke2.jpg");
+//   background-repeat: no-repeat;
+// }

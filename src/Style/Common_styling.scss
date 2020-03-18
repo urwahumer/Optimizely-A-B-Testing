@@ -1,0 +1,54 @@
+@import "Colors.scss";
+
+#top-bar {
+  background-color: $color_shuttle_gray_approx;
+  color: $white;
+  padding: 0;
+  position: relative;
+  z-index: 1001;
+  &.light {
+    background-color: $color_wild_sand_approx;
+    color: $color_gray_approx;
+    a {
+      color: $color_gray_approx;
+    }
+    ul.top-bar-menu li i {
+      color: $color_silver_chalice_approx;
+    }
+    .top-bar-dropdown span:after {
+      color: $color_silver_chalice_approx;
+    }
+  }
+  ul.social-icons {
+    position: relative;
+    z-index: 990;
+  }
+}
+ul.top-bar-menu {
+  margin: 0;
+  padding: 8px 0;
+  li {
+    font-size: 13px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    a {
+      color: $white;
+    }
+    i {
+      color: $white;
+      margin: 0 5px 0 0;
+      font-size: 15px;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+a {
+  color: $black_80 !important;
+  text-decoration: none !important;
+  & :hover {
+    color: $color_caribbean_green_approx !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+}

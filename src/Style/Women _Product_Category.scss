@@ -1,0 +1,93 @@
+//colors
+$color_cruise_approx: #c1eade;
+$mine_shaft: #323232;
+$color_cinderella_approx: #fde1d6;
+$color_lily_white_approx: #e3f6fc;
+$color_mint_tulip_approx: #cdf6ec;
+
+.single-img-wrapper {
+  position: relative;
+  &.single-img-wrapper-1 {
+    padding-right: 10%;
+    .single-img-content {
+      left: 200px;
+      top: 0;
+    }
+    .text-wrapper {
+      margin-top: 30px;
+    }
+  }
+  .single-img-content {
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 220px;
+    &.content-vbottom {
+      bottom: 60px;
+      top: inherit;
+    }
+  }
+  .text-wrapper {
+    text-align: center;
+    padding: 20px 15px;
+    h5 {
+      margin-bottom: 0;
+    }
+  }
+  &.single-img-wrapper-2 {
+    padding-left: 10%;
+    .text-wrapper {
+      margin-bottom: 30px;
+    }
+    .single-img-content {
+      left: 0;
+    }
+  }
+  &.single-img-wrapper-3 {
+    .single-img-content {
+      top: inherit;
+      left: 0;
+      bottom: 50px;
+      width: 100%;
+      text-align: center;
+      padding-left: 10%;
+      margin-bottom: 70px;
+      .border-line {
+        margin-right: 40%;
+        margin-left: 40%;
+      }
+    }
+    .text-wrapper {
+      margin-top: 95px;
+      margin-top: 40px;
+    }
+  }
+}
+.border-line {
+  height: 2px;
+  margin-top: 60px;
+  margin-right: 80%;
+  margin-bottom: 10px;
+  background-color: $color_cruise_approx;
+}
+.bg-orange {
+  background: $color_cinderella_approx;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.bg-sky {
+  background: $color_lily_white_approx;
+}
+.bg-green {
+  background: $color_mint_tulip_approx;
+}
+a.inline_hover {
+  position: relative;
+  background: transparent;
+  color: $mine_shaft;
+  font-size: 14px;
+  padding: 3px 0;
+  line-height: 22px;
+}

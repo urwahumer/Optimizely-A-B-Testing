@@ -1,0 +1,199 @@
+@import "Colors.scss";
+
+//fonts
+$font_0: fontawesome;
+
+img {
+  max-width: 100%;
+}
+.preview {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and(max-width: 996px) {
+  .preview {
+    margin-bottom: 20px;
+  }
+}
+.preview-pic {
+  flex-grow: 1;
+}
+.tab-content {
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 450px;
+    animation-name: opacity;
+    animation-duration: 0.3s;
+  }
+}
+.product_detail_card {
+  margin-top: 50px;
+  background: #eee;
+  padding: 3em;
+  line-height: 1.5em;
+}
+@media screen and(min-width: 997px) {
+  .wrapper {
+    display: flex;
+  }
+}
+.details {
+  display: flex;
+  flex-direction: column;
+}
+.colors {
+  flex-grow: 1;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+}
+.product-title {
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.price {
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  margin-bottom: 15px;
+  span {
+    color: $color_tree_poppy_approx;
+  }
+}
+.sizes {
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.checked {
+  color: $color_tree_poppy_approx;
+}
+.rating {
+  margin-bottom: 15px;
+}
+.product-description {
+  margin-bottom: 15px;
+}
+.vote {
+  margin-bottom: 15px;
+}
+.size {
+  margin-right: 10px;
+  &:first-of-type {
+    margin-left: 40px;
+  }
+}
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 2px;
+  &:first-of-type {
+    margin-left: 20px;
+  }
+}
+.add-to-cart {
+  background: $color_tree_poppy_approx;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: $white;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: background 0.3s ease;
+  &:hover {
+    background: $color_mai_tai_approx;
+    color: $white;
+  }
+}
+.like {
+  background: $color_tree_poppy_approx;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: $white;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: background 0.3s ease;
+  &:hover {
+    background: $color_mai_tai_approx;
+    color: $white;
+  }
+}
+.not-available {
+  text-align: center;
+  line-height: 2em;
+  &:before {
+    font-family: $font_0;
+    content: "\f00d";
+    color: $white;
+  }
+}
+.orange {
+  background: $color_tree_poppy_approx;
+}
+.green {
+  background: $color_limeade_approx;
+}
+.blue {
+  background: $color_deep_cerulean_approx;
+}
+.tooltip-inner {
+  padding: 1.3em;
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(1);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(1);
+  }
+}
+.btn-add-to-cart {
+  border-radius: 2px;
+  color: $color_wild_sand_approx !important;
+  background-color: $color_caribbean_green_approx !important;
+  border-color: $color_caribbean_green_approx !important;
+  font-size: 15px;
+}
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px;
+  li {
+    width: 18%;
+    margin-right: 2.5%;
+    img {
+      max-width: 100%;
+      height: 80px;
+      width: 100px;
+      display: block;
+    }
+    a {
+      padding: 0;
+      margin: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

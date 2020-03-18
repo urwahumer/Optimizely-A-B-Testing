@@ -1,0 +1,245 @@
+@import "Colors.scss";
+
+//fonts
+$font_0: simple-line-icons;
+
+logo {
+  display: inline-block;
+  margin-top: 1px;
+}
+#logo {
+  float: left;
+  margin-right: 40px;
+  img {
+    max-height: 43px;
+    width: auto;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translate3d(0, 0, 0);
+  }
+}
+#header {
+  position: relative;
+  z-index: 999;
+  padding: 25px 0 14px;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 0 10px 0 $black_12;
+}
+.header-widget {
+  position: relative;
+  top: -1px;
+  height: 54px;
+  text-align: right;
+  .button {
+    margin-right: 0;
+    &.border {
+      margin-right: 0;
+    }
+  }
+  .sign-in {
+    position: relative;
+    top: 10px;
+    color: $color_mine_shaft_approx;
+    margin-right: 25px;
+    vertical-align: top;
+    i {
+      padding-right: 4px;
+      vertical-align: top;
+      padding-top: 5px;
+    }
+    &:hover {
+      color: $color_shuttle_gray_approx;
+    }
+  }
+}
+.left-side {
+  float: left;
+  width: 65%;
+  display: inline-block;
+}
+.right-side {
+  float: right;
+  width: 35%;
+  display: inline-block;
+}
+#navigation {
+  float: left;
+}
+#header-container {
+  &.top-border {
+    border-top: 4px solid $color_shuttle_gray_approx;
+  }
+  &.header-style-2 {
+    .right-side {
+      width: 70%;
+    }
+    .left-side {
+      width: 30%;
+    }
+    #header {
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .header-style-2 {
+    .right-side-menu-item {
+      float: right !important;
+    }
+    .user-menu {
+      float: right;
+      margin-top: -52px;
+      margin-right: 10px;
+      .user-name {
+        color: $white !important;
+        &:hover {
+          color: $white !important;
+          &:after {
+            color: $white_50 !important;
+          }
+        }
+        &:after {
+          color: $white_50 !important;
+        }
+      }
+      ul {
+        top: 50px;
+      }
+      &.active .user-name {
+        color: $white !important;
+        &:hover {
+          color: $white !important;
+          &:after {
+            color: $white_50 !important;
+          }
+        }
+        &:after {
+          color: $white_50 !important;
+        }
+      }
+    }
+    #navigation ul#responsive {
+      width: 100%;
+    }
+    .sign-in i {
+      top: 3px;
+      position: relative;
+      padding-right: 5px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .header-style-2 .user-menu-container {
+    height: 60px;
+    display: block;
+    border-top: 1px solid $color_mercury_approx;
+    margin: 15px;
+    padding-top: 15px;
+  }
+  .mm-menu .sign-in i.fa.fa-user:before {
+    font-size: 15px;
+    position: relative;
+    top: 1px;
+    padding-right: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .header-style-2 {
+    .right-side {
+      margin-top: 5px;
+    }
+    .header-widget a.button.border {
+      margin-bottom: 0;
+    }
+  }
+  #header-container.header-style-2 .header-widget {
+    zoom: 0.7;
+  }
+}
+img.footer-logo {
+  max-height: 43px;
+  width: auto;
+  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: translate3d(0, 0, 0);
+}
+.sign-in i.fa.fa-user:before {
+  font-family: $font_0;
+  content: "\e066";
+  font-size: 17px;
+  position: relative;
+  top: -1px;
+}
+header.fullwidth .container {
+  width: 100%;
+  margin: 0;
+  padding: 0 40px;
+}
+.header-style-2 .header-widget {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  float: right;
+  padding-left: 0;
+  text-align: left;
+  li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    padding-right: 35px;
+    line-height: 24px;
+    position: relative;
+    &:after {
+      position: absolute;
+      height: 48px;
+      content: "";
+      display: inline-block;
+      width: 1px;
+      background-color: $color_mercury_approx;
+      //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+      transform: translateY(-50%);
+      top: 50%;
+      right: 0;
+    }
+    i {
+      float: left;
+      display: inline-block;
+      color: $color_shuttle_gray_approx;
+      font-size: 34px;
+      width: 35px;
+      position: relative;
+      margin-top: 8px;
+      margin-right: 18px;
+      text-align: center;
+    }
+    .widget-content {
+      float: left;
+      max-width: 150px;
+    }
+    span {
+      &.title {
+        display: block;
+        color: $color_mine_shaft_approx;
+      }
+      &.data {
+        color: #808080;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+    }
+    &.with-btn:after {
+      display: none;
+    }
+  }
+  .sl-icon-location {
+    font-size: 36px;
+    margin: 5px 10px 0 8px;
+  }
+  a.button {
+    margin-left: 13px;
+    line-height: 25px;
+    position: relative;
+    top: 3px;
+  }
+}

@@ -1,0 +1,21 @@
+@import "./Colors.scss";
+@media only screen and (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768) {
+  .hidden {
+    display: none;
+  }
+}
+.top_header_text {
+  font-size: 1rem;
+  list-style: none;
+  text-decoration: none;
+  color: $color_mine_shaft_approx;
+  & :hover {
+    color: $color_caribbean_green_approx;
+    transition: all 0.3s ease-in-out;
+  }
+}
